@@ -15,6 +15,7 @@ gem 'devise_invitable'
 gem 'foundation-rails'
 gem 'pundit'
 gem 'upmin-admin'
+gem "bower-rails", "~> 0.8.3"
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_20]

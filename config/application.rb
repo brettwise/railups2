@@ -8,6 +8,7 @@ Bundler.require(*Rails.groups)
 
 module Railups2
   class Application < Rails::Application
+    config.assets.paths <<  Rails.root.join("vendor","assets","bower_components")
 
     config.generators do |g|
       g.test_framework :rspec,
@@ -33,7 +34,7 @@ module Railups2
     # config.i18n.default_locale = :de
 
     # For Foundation 5
-    config.assets.precompile += %w( vendor/modernizr )
+    # config.assets.precompile += %w( vendor/modernizr )
 
   end
 end
